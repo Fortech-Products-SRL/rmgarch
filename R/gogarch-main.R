@@ -51,7 +51,7 @@
 	n.start = round(out.sample, 0)
 	n = dim(xdata$data)[1]
 	if( (n-n.start) < 100)
-		stop("\ngogarchfit-->error: function requires at least 100 data\n points to run\n")
+		warning("\ngogarchfit-->error: function requires at least 100 data\n points to run\n")
 	data   = xdata$data
 	index  = xdata$index
 	period = xdata$period
